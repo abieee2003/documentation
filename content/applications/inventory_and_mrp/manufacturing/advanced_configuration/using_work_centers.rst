@@ -6,7 +6,7 @@ Work centers
 
 .. important::
    Work centers only appear if the :guilabel:`Work Orders` setting is enabled. To
-   do so, navigate to :menuselection:`Manufacturing --> Configuration --> Settings`, then enable the
+   do so, navigate to :menuselection:`Manufacturing app --> Configuration --> Settings`, then tick the
    :guilabel:`Work Orders` checkbox.
 
 Work orders can be managed in the :guilabel:`Manufacturing` app by
@@ -15,7 +15,7 @@ selecting :menuselection:`Operations --> Work Orders`.
 .. seealso::
    - :doc:`../basic_setup/bill_configuration`
 
-Configuring work centers
+Work center configuration
 ========================
 
 Create a new work center
@@ -24,13 +24,13 @@ Create a new work center
 In the **Manufacturing** app, select :menuselection:`Configuration --> Work Centers` and click the :guilabel:`New` button to open a new work center form.
 
 .. image:: using_work_centers/work-center-form.png
-  :alt: An example of a fully configured work center form.
+   :alt: An example of a fully configured work center form.
 
 - :guilabel:`Work Center Name`: the label for the work center used to select it on a work order or select it for reporting.
 - :guilabel:`Tag`: reusable labels that can be used to sort work centers in the list view
 - :guilabel:`Alternative Workcenters`: where a work order should be carried out of the primary work center is not available
 - :guilabel:`Code`: reference id for the work center that is displayed in the list view
-- :guilabel:`Working Hours`: the hours that work center can be used during the week. 
+- :guilabel:`Working Hours`: the hours that work center can be used during the week
 
 .. _manufacturing/management/using_work_centers/wc-setup:
 
@@ -59,7 +59,7 @@ Set productivity standards and allowed employees
 The :guilabel:`General Information` tab on the work center form allows for productivity goals to be assigned to a work center. These will be used as the basis for calculating how much of the potential time the work center is being used and its operating costs.
 
 .. image:: using_work_centers/work-center-general-information.png
-  :alt: The general information tab of the work center form. 
+   :alt: The general information tab of the work center form. 
 
 - :guilabel:`Time Efficiency`: a multiplier for how using this work station affects the normal speed of execution of a work order
 
@@ -73,7 +73,7 @@ The :guilabel:`General Information` tab on the work center form allows for produ
     If a work center is available for `8 hours per day` but is only expected to be used for `7 hours per day`, the OEE would be `87.50%`. :math:`7/8*100=87.5`
 
   .. seealso::
-    - :doc:`../reporting/oee`
+    :doc:`../reporting/oee`
 
 - :guilabel:`Setup Time`: the time required before work can commence on a work order
 - :guilabel:`Cleanup Time`: breakdown or cleanup time required after a work order is finished
@@ -99,12 +99,12 @@ The :guilabel:`Capacity` setting on a work center creates a default value for ho
   To specify production capacities in different measurements from a count of units, enable the *Units of Measure* feature in the **Inventory** app.
 
 .. seealso::
-   - :doc:`../../maintenance/add_new_equipment`
+   :doc:`../../maintenance/add_new_equipment`
 
 Assigning equipment to work centers
 ===================================
 
-The **Maintenance** app makes it possible to add specific equipment to a work station and individual track its costs and productivity. Adding **Maintenance** will add :guilabel:`Equipment` and :guilabel:`Maintenance` tabs to the work station form, which can be used to list equipment and plan maintenance for it.
+The **Maintenance** app makes it possible to add specific equipment to a work station and individual track its costs and productivity. Adding **Maintenance** will add :guilabel:`Equipment` and :guilabel:`Maintenance` tabs to the work center form, which can be used to list equipment and plan maintenance for it.
 
 .. seealso::
    - :doc:`../../maintenance/add_new_equipment`
@@ -113,7 +113,7 @@ Work center planning
 ====================
 
 The currently scheduled work orders can be viewed by accessing
-:menuselection:`Planning --> Planning by Workcenter`. 
+:menuselection:`Manufacturing app --> Planning --> Planning by Workcenter`. 
 
 .. image:: using_work_centers/work-center-planning.png
    :alt: The Gantt view of planning showing two assembly work centers.
